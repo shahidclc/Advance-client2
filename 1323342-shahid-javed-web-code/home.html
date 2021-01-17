@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- language -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- title -->
+    <title>Cricket Store</title>
+</head>
+
+<body>
+    <header>
+        <!--navigation bar-->
+        <nav>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">product</a></li>
+                <li><a href="Account1.html">Account</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- end -->
+    </header>
+
+    <!-- geolocation code-->
+
+    <button onclick="getLocation()">Know your location</button>
+
+    <p id="location"></p>
+
+
+    <script>
+        var x = document.getElementById("location");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+    <!-- end -->
+    <!-- players images-->
+    <div class="container-1">
+        <br>
+        <div class="image">
+            <img src="images/cric8.jpg" alt="pl">
+        </div>
+        <div class="image">
+            <img src="images/cric3.jpg" alt="pl">
+        </div>
+        <div class="image">
+            <img src="images/cric2.jpg" alt="pl">
+        </div>
+    </div>
+    <!-- end -->
+    <!-- Categories -->
+    <div class="small-container">
+        <h1 class="title">Product categories</h1>
+        <div class="row">
+            <div class="col-4">
+
+                <a href="glove-products.html"> <img src="images/2.jpg" alt="greenglove"></a>
+                <h2>Gloves</h2>
+            </div>
+            <div class="col-4">
+
+                <a href="helmet-products.html"> <img src="images/h2.jpg" alt="greenhelmet"></a>
+                <h2>Helmets</h2>
+            </div>
+            <div class="col-4">
+
+                <a href="leg-Products.html"> <img src="images/p2.jpg" alt="black&whitepad"></a>
+                <h2>Pads</h2>
+            </div>
+            <div class="col-4">
+
+                <a href="ball-Products.html"> <img src="images/b3.jpg" alt="clubball"></a>
+                <h2>Balls</h2>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- offers -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2"><img src="images/b1.jpg" alt="youthball"> </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Play Cricket Store</p>
+                    <h1>Club Brand Balls</h1>
+                    <small>We have a large quantity of balls available in store
+
+                    </small>
+
+                    <a href="ball-products.html" class="btn"> Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- Testimonial -->
+
+    <div class="testimonial">
+
+        <div class="small-container">
+            <h2>Testimonial</h2>
+            <div class="row">
+                <!-- first -->
+                <div class="col-3">
+                    <em class="fa fa-quote-left"></em>
+                    <p>Loved this online store</p>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star-o"></em>
+                    </div>
+                    <img src="images/d1.jpg" alt="pet">
+                    <h3>Peter</h3>
+                </div>
+                <!-- end -->
+                <!-- second -->
+                <div class="col-3">
+                    <em class="fa fa-quote-left"></em>
+                    <p>100 % recomendations</p>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star-o"></em>
+                    </div>
+                    <!-- end -->
+                    <!-- third -->
+                    <img src="images/d1.jpg" alt="rod">
+                    <h3>Rodney</h3>
+                </div>
+                <div class="col-3">
+                    <em class="fa fa-quote-left"></em>
+                    <p>Very cool service</p>
+                    <div class="rating">
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star"></em>
+                        <em class="fa fa-star-o"></em>
+                    </div>
+                    <img src="images/d1.jpg" alt="jack">
+                    <h3>Jack</h3>
+                </div>
+                <!-- end -->
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> Download Our App</h3>
+                    <p>Download App for Android and ios mobile phones</p>
+                    <div class="app-logo">
+                        <img src="images/logo2.jpg" alt="logo2">
+                        <img src="images/logo3.png" alt="logo3">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="logo">
+                    <p> Our purpose is to Sustainabily make the pleasure and benefitsof
+                        sports accessible to the many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3> Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3> Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2020 Shahid Javed</p>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- JS for ionicons -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- end -->
+    <!-- JS for cart -->
+    <script src="me.js"></script>
+    <!-- end -->
+</body>
+
+</html>
